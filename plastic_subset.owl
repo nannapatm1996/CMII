@@ -1,0 +1,1127 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-26#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-26"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-26"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:label xml:lang="en">entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">An entity in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">An entity that has temporal parts and that happens, unfolds or develops through time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">occurent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">An occurent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurent that has temporal proper parts and for some time t, p s-depends_on some meaterial entity at t. (axiom label in BFO2 Reference: [083-003]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115 xml:lang="en">A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that other entities and can be maintained through time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_37997 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37997">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homopolymer macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_53225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37997"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly(alkylene) macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_53226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_53225"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyethylene macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_53242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_53225"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vinyl polymer macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53243 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_53243">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_53242"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly(vinyl chloride)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_53550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_53226"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly(propylene)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_59999 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59999">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical substance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_60027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59999"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_60029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59999"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homopolymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_60031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60029"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly(alkylene) polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_60034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60031"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyethylene polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_60160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60027"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyester polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_60737 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60737">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60029"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyurethane polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_61452 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_61452">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60160"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly(ethylene teraphthalate) polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_61614 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_61614">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60034"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vinyl polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_61642 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_61642">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_61614"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polystyrene polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000191 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A part of an astronomical body which is primarily composed of a continuous volume of solid material, shaped by one or more environmental processes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">solid astronomical body part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000309 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000191"/>
+        <obo:IAO_0000115 xml:lang="en">A landform sunken or depressed below surrounding area.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">depression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000482 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000482">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000501"/>
+        <obo:IAO_0000115 xml:lang="en">A marine bed which lies below a sea.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sea floor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A two-dimensional continuant fiat boundary which is locaed between a landmass and a water body.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoreline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001483"/>
+        <obo:IAO_0000115 xml:lang="en">The portion of the ground surface which lies below water.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">submerged bed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000533 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000533">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000309"/>
+        <obo:IAO_0000115 xml:lang="en">A depression which contains objects and materials discarded by humans or their technologies.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">landfill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000741 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000741">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115 xml:lang="en">A process during which materials deemed as waste are separated and converted into a form which can be used as input by the same processes which generated them.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">recycling process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000776 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000776">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A mass of solid material which is primarily composed of plastic.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">piece of plastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000777 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000777">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000776"/>
+        <obo:IAO_0000115 xml:lang="en">a cylindrical shaped pre-production plastic pellet used in manufacturing and packaging.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">nurdle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000944 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000944">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000776"/>
+        <obo:IAO_0000115 xml:lang="en">A piece of plastic which has a diameter less than five millimetres.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">microplastic particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000945 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000945">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000944"/>
+        <obo:IAO_0000115 xml:lang="en">A microplastic particle which is the direct output of a manufacturing process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">primary microplastic particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000946 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000946">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000944"/>
+        <obo:IAO_0000115 xml:lang="en">A microplastic which is derived from the breakdown of larger plastic debris.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">secondary microplastic particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000993 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000993">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process during which raw or recycled materials are transformed into products for use or sale using labour and machines, tools, chemical and biological processing, or formulation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">manufacturing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500042"/>
+        <obo:IAO_0000115 xml:lang="en">A process during which materials deemed to be waste are transported away from a site.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">waste disposal process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001436 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001436">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process during which human access and obtain resources, benefits, or services from a natural or anthropised ecosystem.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">planned environmental usage process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001479"/>
+        <obo:IAO_0000115 xml:lang="en">A part of an astronomical body which is primarily composed of a continuous volume of liquid material, shaped by one or more environmental processes</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">liquid astronomical body part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A part of an astronomical body which pimarily composed of a continuous volume of liquid or gaseous material, shaped by one or more environmental processes</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fluid astronomical body part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A surface layer where the solid or liquid material of an astronomical body comes into contact with an atmosphere or outer space.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">surface of an astronomical body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001483"/>
+        <obo:IAO_0000115 xml:lang="en">A water urface that is part of a water body.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">surface layer of a water body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001581 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001581">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001554"/>
+        <obo:IAO_0000115 xml:lang="en">A surface layer whihc is part of an ocean or sea.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sea surface layer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">A process in which includes the components of an environmental system as participants.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">environmental system process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A process during which humans apply technology to alter the magnitude, duration, rate, or impact of an environmental process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anthropogenic modulatory intervention process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115 xml:lang="en">An environmental process which is driven by the action of humans.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anthropogenic environmental process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115 xml:lang="en">An environmental system process that results in the introduction of contaminants into an environment.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">environmental pollution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500036"/>
+        <obo:IAO_0000115 xml:lang="en">A pollution porcess during which plastic contaminants are released into an environmental material.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plastic pollution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500026"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process during which the amount of pollutants released into an environmental system is regulated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">pollution control</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115 xml:lang="en">A process during which the mass of one or more materials, present within a given site, increases.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">material accumulation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115 xml:lang="en">A process during which a portion of some environmental material is converted into a different material or a collection of materials.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">material transformation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03500005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03500005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity which has been discarded outside waste management systems by humans or their technologies.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anthropogenic litter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115 xml:lang="en">A disposition inhering a bearer by virtue of that bearer&apos;s ability to, repeatedly, become plastic on heating harden again on cooling.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">thermoplasticity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">An environmental material which is capable of, repeatedly when heated and hardening again when cooled.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">thermoplastic meterial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115 xml:lang="en">A disposition which inheres in materials capable of becoming rigid when cured by heating.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">thermosetting disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60027"/>
+        <obo:IAO_0000115 xml:lang="en">A polymer which has been irreversibly hardened by heat-induced curing.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">thermoset polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000776"/>
+        <obo:IAO_0000115 xml:lang="en">A piece of plastic which has a matrix- or sponge-like structure with numerous, hollow internal spaces.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">piece of plastic foam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000776"/>
+        <obo:IAO_0000115 xml:lang="en">A piece of plastic which is flexible, thin, and planar.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plastic film</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000776"/>
+        <obo:IAO_0000115 xml:lang="en">A piece of plastic which 1) is hard, 2) has an irregular shape, and 3) jas broken off a larger piece of plastic.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plastic fragment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000776"/>
+        <obo:IAO_0000115 xml:lang="en">A piece of plastic which is linear and flexible</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plastic line</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000776"/>
+        <obo:IAO_0000115 xml:lang="en">A piece of plastic which is hard, 2) has a smooth external surface, and 3) has a roughly spherical or granular shape.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plastic pellet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001477"/>
+        <obo:IAO_0000115 xml:lang="en">A liquid astronomical body part which 1) vertically spans a water body and 2) has fiat boundaries approximating a columnar shape.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">water column</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+        <obo:IAO_0000115 xml:lang="en">A collection of organisms which inhabits the same region, ecosystem, or time period.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">biota</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105012"/>
+        <obo:IAO_0000115 xml:lang="en">A biota which inhabits a marine ecosystem.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">marine biota</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115 xml:lang="en">A biodegradation process during which a material entity is broken down.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">biodegradation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105014"/>
+        <obo:IAO_0000115 xml:lang="en">A biodegradation process during which plastic is broken down.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">biodegradation of plastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105101"/>
+        <obo:IAO_0000115 xml:lang="en">A plastic which has a matrix- or sponge-like structure with numerous, hollow internal spaces.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">foamed plastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115 xml:lang="en">A physical quality which inheres in a liquid or solid bearer by virtue of that bearer trapping a gas in a colloidal suspension throughout its volume.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">quality of a foam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0042755"/>
+        <obo:IAO_0000115 xml:lang="en">A feeding behavior during which material is taken into body of an organism.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ingestion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000009"/>
+        <obo:IAO_0000115 xml:lang="en">A material accumulation process during which material adheres to a solid or liquid surface.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">adsorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000009"/>
+        <obo:IAO_0000115 xml:lang="en">A material accumulation process during which material builds up on a solid surface such that a function of that surface, or the object it is a part of, is impaired.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fouling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105022"/>
+        <obo:IAO_0000115 xml:lang="en">A fouling process during which biological matter accumulates on a solid surface.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">biofouling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105006"/>
+        <obo:IAO_0000115 xml:lang="en">A piece of plastic foam which ahs a near-spherical or granular shape.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">granule of plastic foam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115 xml:lang="en">An environmental system process during which a material entity breaks into pieces or parts.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fragmentation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105027"/>
+        <obo:IAO_0000115 xml:lang="en">A fragmentation process which is caused by weathering.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fragmentation due to weathering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">An environmental material which 1) is composed primarily of polymers with high molecular mass and 2) once deformed does not spontaneously reuturn to its origincal shape.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000776"/>
+        <obo:IAO_0000115 xml:lang="en">A piece of plastic which is greater than 1 metre in its longest dimension.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">megaplastic particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000776"/>
+        <obo:IAO_0000115 xml:lang="en">A piece of plastic which is between 25 and 100 millimetres in its longest dimension.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">macroplastic particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000776"/>
+        <obo:IAO_0000115 xml:lang="en">A piece of plastic which is between 5 and 25 millimetres in its longest dimension.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">mesoplastic particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000776"/>
+        <obo:IAO_0000115 xml:lang="en">A piece of plastic which has a diameter less than 1 micrometre.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">nanoplastic particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A part of an astronomical body which includes, as parts, all the entities which are composed primarily of plastic and which are within the gravitational sphere of influence of that body.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plastisphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03500005"/>
+        <obo:IAO_0000115 xml:lang="en">Anthropogenic litter which is present in the marine environment.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">marine anthropogenic litter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001260"/>
+        <obo:IAO_0000115 xml:lang="en">A waste disposal process during which waste is improperly disposed of into the environment.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">littering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role which 1) inheres in a material entity 2) is realised when that entity is discarded outside waste management systems by humans or their technologies.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">litter role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105106"/>
+        <obo:IAO_0000115 xml:lang="en">A plastisphere which is composed primarily of manufactured plastic.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">manufactured plastisphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105101"/>
+        <obo:IAO_0000115 xml:lang="en">Plastic which is composed primarily of polymers produced by processes whose agents do not include humans or their technologies.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">natural plastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105101"/>
+        <obo:IAO_0000115 xml:lang="en">A plastic which is composed primarily of polymers by a manufacturing process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">synthetic plastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001436"/>
+        <obo:IAO_0000115 xml:lang="en">A planned environmental usage process during which any number of fish are caught by humans or their technologies.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fishing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500027"/>
+        <obo:IAO_0000115 xml:lang="en">An anthropogenic environmental process during which abandoned, lost, or discarded fishing gear attracts and entangles organisms.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ghost fishing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/ENVO_00003074"/>
+        <obo:IAO_0000115 xml:lang="en">A manufactured product which is used for fishing.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fishing gear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105117"/>
+        <obo:IAO_0000115 xml:lang="en">Abandoned fishing gear which was intentionally left unmaintained and uncontrolled by its custodian.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">discarded fishing gear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105115"/>
+        <obo:IAO_0000115 xml:lang="en">Fishing gear which is not under the control of or maintained by its custodian.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">abandoned fishing gear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105117"/>
+        <obo:IAO_0000115 xml:lang="en">Abandoned fishing gear which was intentionally left unmaintained and uncontrolled by its custodian.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">lost fishing gear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000043"/>
+        <obo:IAO_0000115 xml:lang="en">A material transformation process during which the properties of a material are changed as a result of in situ exposure to atmospheric processes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">weathering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115 xml:lang="en">An environmental system process during which material entities become entrapped, wrapped, twisted, entwined, or otherwise caught in one another.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">entanglement process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105120"/>
+        <obo:IAO_0000115 xml:lang="en">An entanglement process during which organisms become entrapped in anthropogenic marine debris.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">entanglement of organisms in marine debris.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60027"/>
+        <obo:IAO_0000115 xml:lang="en">A polymer which is the output of a biological process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">biopolymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60027"/>
+        <obo:IAO_0000115 xml:lang="en">A polymer which is the output of a manufacturing process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">synthetic polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03500005"/>
+        <obo:IAO_0000115 xml:lang="en">Anthropogenic litter which is present in a coastal environement</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">coastal anthropogenic litter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000993"/>
+        <obo:IAO_0000115 xml:lang="en">A manufacturing process which includes plastic as one of its specified outputs.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plastic manufacturing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105119"/>
+        <obo:IAO_0000115 xml:lang="en">Weathering during which plastic is worn or broken down.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">weathering of plastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">A biological process represents a specific objective that the organism is generically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g. the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">biological_process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0042755 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0042755">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:label xml:lang="en">eating behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000031"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that consists of two or more organismsm, viruses, or viroids.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is one or more organisms, viruses, or viroids.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">organismal entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/ENVO_00003074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/ENVO_00003074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that has been processed by humans or their technology in any way, including intermediate products as well as final products.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">manufactured product</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
